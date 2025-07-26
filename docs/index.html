@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Wonson Portfolio</title>
+  <meta charset="UTF-8" />
+  <title>Sticky Nav Test</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #333;
+      color: white;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #555;
+      color: white;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    main {
+      height: 2000px; /* enough scroll */
+      padding: 2rem;
+    }
+  </style>
 </head>
 <body>
-    
+  <header>
+    <h1>Header Title</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Content</h2>
+    <p>Scroll down to see nav stay stuck.</p>
+  </main>
 </body>
 </html>
