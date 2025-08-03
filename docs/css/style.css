@@ -11,6 +11,20 @@
   --link: #007acc;
 }
 
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: inherit;
+  padding: 0.25rem 0.5rem;
+  
+}
+
+#theme-toggle:hover {
+  opacity: 0.8;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
@@ -28,21 +42,40 @@ nav {
   position: sticky;
   top: 0;
   background: var(--bg);
-  padding: 1rem 1rem;
+  padding: 0.75rem 1rem;
   border-top: 1px solid var(--text);
   border-bottom: 1px solid var(--text);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index:1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav a {
-  margin-right: 1rem;
+  margin-right: 0.25rem;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   color: var(--link);
+  border: 1px solid var(--bg);
 }
 
 nav button {
   padding: 0.5rem 1rem;
+  
+}
+
+nav a.selected {
+  background: #0056b3;
+  border-radius: 8px;
+  border: 1px solid var(--text);
+  color: white;
+}
+
+nav a:hover {
+  background-color: #0057b388;
+  color: var(--text);
+  border-radius: 8px;
+  border: 1px solid var(--text);
 }
 
 
@@ -56,8 +89,13 @@ footer {
   padding: 1rem 0;
 }
 
-h1, h2, h3 {
+h1, h2{
   margin: 1rem 0;
+}
+
+h3 {
+  margin: 1rem 0;
+  margin-top: 2rem;
 }
 
 h4 {
@@ -69,8 +107,40 @@ a {
 }
 
 ul {
-
   padding: 0 2rem;
+}
+
+/* HOME PAGE */
+
+.hero-image {
+  float: right;
+  margin: 0 0 1rem 2rem;
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.highlights ul {
+  list-style:none;
+}
+
+.highlights ul li:before {
+  content: '✔️';
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--link);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.button:hover {
+  opacity: 0.9;
 }
 
 /* PROJECTS PAGE*/

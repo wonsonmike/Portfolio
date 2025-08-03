@@ -3,55 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project-name</title>
+  <title>Space Game</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Project-name</h1>
+    <h1>Space Game</h1>
   </header>
 
   <nav>
+    <div>
     <a href="../index.html">Home</a>
     <a href="../about.html">About</a>
-    <a href="../projects.html">Projects</a>
+    <a href="../projects.html" class="selected">Projects</a>
     <a href="../contact.html">Contact</a>
-    <button id="theme-toggle">Toggle Theme</button>
+    </div>
+    <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
   </nav>
   
   <main>
     <section>
       <h2>About This Project</h2>
-      <p>
-        Write a clear overview here: what the project does, its purpose, who it’s for.
-      </p>
+      <p>I've always wanted to make a video game, so I wanted to learn the basics of using python arcade to build a simple retro style game. This has been a fun, 2-week project for me, and something that's easy to keep going, as a game is something that's easy to find new things to add.</p>
+      <p>This game is a speed test to be able to shoot all the alien robots. You have 15 seconds to shoot all robots, and each round gets harder and harder. There are instructions built into the game. To run the game, you can either run the python app on your own, or there is a Windows executable and a macOS app that can be used to play it.</p>
+      <p>I wrote this software to have my first try at creating a game in Python through the Python arcade library. I wanted to better understand how to create a game, and what goes into the basics. This is my first time using graphics with sprites, and using the arcade library.</p>
 
       <h3>Key Features</h3>
       <ul>
-        <li>Feature one that stands out</li>
-        <li>Feature two that solves a problem</li>
-        <li>Feature three — what makes it unique</li>
+        <li>Simple interface</li>
+        <li>Resizeable window</li>
+        <li>Quick gameplay</li>
+        <li>Easy macOS and Windows executable files</li>
       </ul>
 
       <h3>Technologies Used</h3>
-      <p>Python, C++, React Native, HTML/CSS/JS, or whatever applies.</p>
+      <ul>
+        <li>Python</li>
+        <li>Python Arcade</li>
+      </ul>
 
       <h3>Links</h3>
       <ul>
         <li><a href="https://github.com/wonsonmike/space" target="_blank">View on GitHub</a></li>
-        <li><a href="https://your-live-demo.com" target="_blank">Live Demo</a> (optional)</li>
+        <li><a href="https://www.youtube.com/watch?v=H87MI0U969s" target="_blank">Live Demo</a></li>
       </ul>
 
       <h3>Screenshots</h3>
-      <img src="assets/project-screenshot.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
+      <img src="../assets/projects/space.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
 
       <h3>Lessons Learned</h3>
       <p>
-        A short note on what you learned or improved while building this — employers love to see growth!
+        I learned how to use Python Arcade, and how to use sprites when making a game. 
       </p>
 
       <p>
-        <a href="projects.html">← Back to Projects</a>
+        <a href="../projects.html">← Back to Projects</a>
       </p>
     </section>
   </main>
@@ -59,6 +65,6 @@
   <footer>
     <p>&copy; Michael Wonson 2025 </p>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>

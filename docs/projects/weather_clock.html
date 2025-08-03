@@ -12,46 +12,53 @@
   </header>
 
   <nav>
+    <div>
     <a href="../index.html">Home</a>
     <a href="../about.html">About</a>
-    <a href="../projects.html">Projects</a>
+    <a href="../projects.html" class="selected">Projects</a>
     <a href="../contact.html">Contact</a>
-    <button id="theme-toggle">Toggle Theme</button>
+    </div>
+    <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
   </nav>
   
   <main>
     <section>
       <h2>About This Project</h2>
       <p>
-        Write a clear overview here: what the project does, its purpose, who it’s for.
+        This is a watch face for a Fitbit Sense. The battery indicator on the left side will darken based on the battery percentage. Weather details are obtained through the Open Weather Map API. The UV indicator on the right side similarly changes based on the current UV index. The weather at the top shows the weather for the current hour, plus the next 3 hours. There is an icon for the weather conditions and the temperature shown. In the middle, there's the time, date, and location. At the bottom is the current heart rate of the user, the amount of steps taken that day, and the distance traveled that day by foot.
       </p>
 
       <h3>Key Features</h3>
       <ul>
-        <li>Feature one that stands out</li>
-        <li>Feature two that solves a problem</li>
-        <li>Feature three — what makes it unique</li>
+        <li>Responsive Battery Indicator</li>
+        <li>Responsive UV Indicator</li>
+        <li>Current Weather + 3 next hours</li>
       </ul>
 
       <h3>Technologies Used</h3>
-      <p>Python, C++, React Native, HTML/CSS/JS, or whatever applies.</p>
+      <ul>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>CSS</li>
+        <li>Open Weather Map API</li>
+      </ul>
 
       <h3>Links</h3>
       <ul>
         <li><a href="https://github.com/wonsonmike/weather_clock" target="_blank">View on GitHub</a></li>
-        <li><a href="https://your-live-demo.com" target="_blank">Live Demo</a> (optional)</li>
+        <li><a href="https://youtu.be/t9FQpmnbYw4" target="_blank">Live Demo</a></li>
       </ul>
 
       <h3>Screenshots</h3>
-      <img src="assets/project-screenshot.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
+      <img src="../assets/projects/weather_clock.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
 
       <h3>Lessons Learned</h3>
       <p>
-        A short note on what you learned or improved while building this — employers love to see growth!
+        I learned what it's like building a smart watch interface, how to access data from the internal sensors. I also gained practice in how to access a public API, and creating a user interface.
       </p>
 
       <p>
-        <a href="projects.html">← Back to Projects</a>
+        <a href="../projects.html">← Back to Projects</a>
       </p>
     </section>
   </main>
@@ -59,6 +66,6 @@
   <footer>
     <p>&copy; Michael Wonson 2025 </p>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>

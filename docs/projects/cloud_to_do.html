@@ -12,46 +12,51 @@
   </header>
 
   <nav>
+    <div>
     <a href="../index.html">Home</a>
     <a href="../about.html">About</a>
-    <a href="../projects.html">Projects</a>
+    <a href="../projects.html" class="selected">Projects</a>
     <a href="../contact.html">Contact</a>
-    <button id="theme-toggle">Toggle Theme</button>
+    </div>
+    <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
   </nav>
   
   <main>
     <section>
       <h2>About This Project</h2>
-      <p>
-        Write a clear overview here: what the project does, its purpose, who it’s for.
-      </p>
+      <p>This is my first attempt with cloud storage. I want to learn the basics of how to store and manage data in the cloud. I will be using Google's Firebase to store the data.</p>
+      <p>The software I've created is a basic to-do list. It stores the to-do items in the cloud as documents, and saves the name of the item and whether it's finished. If you finish an item, it will remove it from the list. The program is run by running the main.py file. It is used in a terminal, and will give you the options of viewing the list, adding an item, editing an item, and finishing an item.</p>
+      <p>I wrote this software as a simple introduction to cloud databases. There are much better reasons to use a cloud database, but I wanted a very simple program as my first introduction with cloud storage.</p>
 
       <h3>Key Features</h3>
       <ul>
-        <li>Feature one that stands out</li>
-        <li>Feature two that solves a problem</li>
-        <li>Feature three — what makes it unique</li>
+        <li>Stores to-do items in the cloud</li>
+        <li>CRUD functionality</li>
+        <li>Basic terminal interface</li>
       </ul>
 
       <h3>Technologies Used</h3>
-      <p>Python, C++, React Native, HTML/CSS/JS, or whatever applies.</p>
+      <ul>
+        <li>Python</li>
+        <li>Google Firebase</li>
+      </ul>
 
       <h3>Links</h3>
       <ul>
         <li><a href="https://github.com/wonsonmike/Cloud-To-Do" target="_blank">View on GitHub</a></li>
-        <li><a href="https://your-live-demo.com" target="_blank">Live Demo</a> (optional)</li>
+        <li><a href="https://www.youtube.com/watch?v=JTTYUSwzqLw" target="_blank">Live Demo</a></li>
       </ul>
 
       <h3>Screenshots</h3>
-      <img src="assets/project-screenshot.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
+      <img src="../assets/projects/cloud_to_do.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
 
       <h3>Lessons Learned</h3>
       <p>
-        A short note on what you learned or improved while building this — employers love to see growth!
+        With this project, I reinforced my CRUD usage and learned the basics of cloud storage. I gained experience with Google Firebase, and accessing the API in Python.
       </p>
 
       <p>
-        <a href="projects.html">← Back to Projects</a>
+        <a href="../projects.html">← Back to Projects</a>
       </p>
     </section>
   </main>
@@ -59,6 +64,6 @@
   <footer>
     <p>&copy; Michael Wonson 2025 </p>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>

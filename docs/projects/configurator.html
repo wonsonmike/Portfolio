@@ -3,55 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project-name</title>
+  <title>RPG Configurator</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Project-name</h1>
+    <h1>RPG Configurator</h1>
   </header>
 
   <nav>
+    <div>
     <a href="../index.html">Home</a>
     <a href="../about.html">About</a>
-    <a href="../projects.html">Projects</a>
+    <a href="../projects.html" class="selected">Projects</a>
     <a href="../contact.html">Contact</a>
-    <button id="theme-toggle">Toggle Theme</button>
+    </div>
+    <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
   </nav>
   
   <main>
     <section>
       <h2>About This Project</h2>
-      <p>
-        Write a clear overview here: what the project does, its purpose, who it’s for.
-      </p>
+      <p>This was a two week project to learn Kotlin, and make my first ever app. I want to build something basic, with some simple user interaction. I know that apps are incredibly useful, and almost every company has their own app. Knowing how to build one from scratch and improve one already built is a very useful skill.</p>
+      <p>This is a very simple character creation app. In order to run the app, you'll need to either use an app emulator, such as the one built into Android Studio, or compile the app as an APK and install it on an Android device. To use the app, you simply press on the class and/or race that you want to use, and see the given stats.</p>
+      <p>My purpose for creating this app was to practice the basics of app development. I wanted to build something basic, but with the potential to be improved and grown in the future.</p>
 
       <h3>Key Features</h3>
       <ul>
-        <li>Feature one that stands out</li>
-        <li>Feature two that solves a problem</li>
-        <li>Feature three — what makes it unique</li>
+        <li>Native Kotlin app</li>
+        <li>Simple interface</li>
       </ul>
 
       <h3>Technologies Used</h3>
-      <p>Python, C++, React Native, HTML/CSS/JS, or whatever applies.</p>
+      <ul>
+        <li>Kotlin</li>
+        <li>Android Studio</li>
+        <li>Jetpack Compose framework</li>
+      </ul>
 
       <h3>Links</h3>
       <ul>
         <li><a href="https://github.com/wonsonmike/Configurator" target="_blank">View on GitHub</a></li>
-        <li><a href="https://your-live-demo.com" target="_blank">Live Demo</a> (optional)</li>
+        <li><a href="https://www.youtube.com/watch?v=aC7md9f0u2s" target="_blank">Live Demo</a></li>
       </ul>
 
       <h3>Screenshots</h3>
-      <img src="assets/project-screenshot.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
+      <img src="../assets/projects/configurator.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
 
       <h3>Lessons Learned</h3>
       <p>
-        A short note on what you learned or improved while building this — employers love to see growth!
+        I learned the basics of mobile app development. I taught myself the basics of Kotlin, and built a functioning Android app. 
       </p>
 
       <p>
-        <a href="projects.html">← Back to Projects</a>
+        <a href="../projects.html">← Back to Projects</a>
       </p>
     </section>
   </main>
@@ -59,6 +64,6 @@
   <footer>
     <p>&copy; Michael Wonson 2025 </p>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>

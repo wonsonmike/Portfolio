@@ -12,11 +12,13 @@
   </header>
 
   <nav>
+    <div>
     <a href="../index.html">Home</a>
     <a href="../about.html">About</a>
-    <a href="../projects.html">Projects</a>
+    <a href="../projects.html" class="selected">Projects</a>
     <a href="../contact.html">Contact</a>
-    <button id="theme-toggle">Toggle Theme</button>
+    </div>
+    <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
   </nav>
   
   <main>
@@ -34,16 +36,19 @@
       </ul>
 
       <h3>Technologies Used</h3>
-      <p>Python, C++, React Native, HTML/CSS/JS, or whatever applies.</p>
+      <ul>
+        <li>Python/C++</li>
+        <li>Other</li>
+      </ul>
 
       <h3>Links</h3>
       <ul>
         <li><a href="https://github.com/yourusername/your-project" target="_blank">View on GitHub</a></li>
-        <li><a href="https://your-live-demo.com" target="_blank">Live Demo</a> (optional)</li>
+        <li><a href="https://your-live-demo.com" target="_blank">Live Demo</a></li>
       </ul>
 
       <h3>Screenshots</h3>
-      <img src="assets/project-screenshot.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
+      <img src="../assets/projects/project-screenshot.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
 
       <h3>Lessons Learned</h3>
       <p>
@@ -51,7 +56,7 @@
       </p>
 
       <p>
-        <a href="projects.html">← Back to Projects</a>
+        <a href="../projects.html">← Back to Projects</a>
       </p>
     </section>
   </main>
@@ -59,6 +64,6 @@
   <footer>
     <p>&copy; Michael Wonson 2025 </p>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>

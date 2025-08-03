@@ -12,46 +12,57 @@
   </header>
 
   <nav>
+    <div>
     <a href="../index.html">Home</a>
     <a href="../about.html">About</a>
-    <a href="../projects.html">Projects</a>
+    <a href="../projects.html" class="selected">Projects</a>
     <a href="../contact.html">Contact</a>
-    <button id="theme-toggle">Toggle Theme</button>
+    </div>
+    <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
   </nav>
   
   <main>
     <section>
       <h2>About This Project</h2>
-      <p>
-        Write a clear overview here: what the project does, its purpose, who it’s for.
-      </p>
+      <p>While there are many basic period tracking apps, my plan is to use a more advanced STM (Sympto-Thermal Method) tracking, which tracks more than just the number of days to the next period, using a variety of indicators of the point at which a woman is in their cycle. The main features will be a daily input for the user, calculation of the point in the cycle and fertility likelihood, and cycle history. </p>
+      <p>The existing solution to STM tracking is by manually tracking various indicators, such as internal temperature and mucus features, creating a graph and understanding what step in the cycle they’re in based on these manually tracked details. My solution would take the work off of the individual and automate it. This way, no work other than daily data entry is required to know all details of their cycle in accordance with the STM. This would have a real-world impact of making the more accurate STM tracking much more accessible to people. </p>
+      <p>The intended audience/customer/user of this app is women in general, with the primary audience being women that want to use natural family planning (NFP) methods, such as STM. This more accurate fertility tracking method can be used by all women in need of accurate menstrual tracking. </p>
+
 
       <h3>Key Features</h3>
       <ul>
-        <li>Feature one that stands out</li>
-        <li>Feature two that solves a problem</li>
-        <li>Feature three — what makes it unique</li>
+        <li>React Native offers cross-compatibility with Android and iOS</li>
+        <li>Simple, straightforward data entry for the user</li>
+        <li>Automated cycle tracking using the complex STM tracking</li>
+        <li>Robust error handling and algorithm</li>
       </ul>
 
       <h3>Technologies Used</h3>
-      <p>Python, C++, React Native, HTML/CSS/JS, or whatever applies.</p>
+      <ul>
+        <li>React Native</li>
+        <li>JavaScript</li>
+        <li>Expo</li>
+        <li>ExpoSQLite</li>
+        <li>AsyncStorage</li>
+        <li>JSON</li>
+      </ul>
 
       <h3>Links</h3>
       <ul>
         <li><a href="https://github.com/wonsonmike/stm-tracker" target="_blank">View on GitHub</a></li>
-        <li><a href="https://your-live-demo.com" target="_blank">Live Demo</a> (optional)</li>
+        <li><a href="https://youtu.be/92H8orneXtI" target="_blank">Live Demo</a></li>
       </ul>
 
       <h3>Screenshots</h3>
-      <img src="assets/project-screenshot.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
+      <img src="../assets/projects/stm-tracker.jpg" alt="Screenshot of the project" style="max-width: 100%; height: 40rem;">
 
       <h3>Lessons Learned</h3>
       <p>
-        A short note on what you learned or improved while building this — employers love to see growth!
+        I learned the basics of React Native, and how to develop using Expo. I increased my understanding of JavaScript and mobile app development. I got to practice my usage of SQL, and the software development process.
       </p>
 
       <p>
-        <a href="projects.html">← Back to Projects</a>
+        <a href="../projects.html">← Back to Projects</a>
       </p>
     </section>
   </main>
@@ -59,6 +70,6 @@
   <footer>
     <p>&copy; Michael Wonson 2025 </p>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>

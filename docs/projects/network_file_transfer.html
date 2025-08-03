@@ -3,55 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project-name</title>
+  <title>Network File Transfer</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Project-name</h1>
+    <h1>Network File Transfer</h1>
   </header>
 
   <nav>
+    <div>
     <a href="../index.html">Home</a>
     <a href="../about.html">About</a>
-    <a href="../projects.html">Projects</a>
+    <a href="../projects.html" class="selected">Projects</a>
     <a href="../contact.html">Contact</a>
-    <button id="theme-toggle">Toggle Theme</button>
+    </div>
+    <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
   </nav>
   
   <main>
     <section>
       <h2>About This Project</h2>
-      <p>
-        Write a clear overview here: what the project does, its purpose, who it’s for.
-      </p>
+      <p>This software is the first time I'm programming something to send data between two computers. This is an important first step for me, as communicating between computers is vital for almost all consumer software.</p>
+      <p>This software is a basic network file manager. The files are stored on the server side in the "files" folder. On the client side, you have two folders, "files" and "uploading". The "files" folder is where files that you download from the server go to, and "uploading" is where you can put files that you're going to upload to the server.</p>
+      <p>With both the client and server software, you'll simply run the python file in a terminal. As expected, you need to first start the server side, then the client side, so that the client is able to connect to the server. There isn't anything to do on the server side once you've started it, as it's only there to hold the files and manage them. On the client side, you'll be given options in the terminal for what action you want to perform next.</p>
+      <p>My purpose of writing this software was to introduce myself to network programming. I wanted to create a basic server and client, and learn how to manage that connection, and send data between the server and client.</p>
 
       <h3>Key Features</h3>
       <ul>
-        <li>Feature one that stands out</li>
-        <li>Feature two that solves a problem</li>
-        <li>Feature three — what makes it unique</li>
+        <li>Client-server architecture</li>
+        <li>Data is sent in 4096 byte packets over a TCP connection</li>
+        <li>Basic terminal interface</li>
       </ul>
 
       <h3>Technologies Used</h3>
-      <p>Python, C++, React Native, HTML/CSS/JS, or whatever applies.</p>
+      <ul>
+        <li>Python</li>
+        <li>TCP</li>
+      </ul>
 
       <h3>Links</h3>
       <ul>
         <li><a href="https://github.com/wonsonmike/Network-File-Transfer" target="_blank">View on GitHub</a></li>
-        <li><a href="https://your-live-demo.com" target="_blank">Live Demo</a> (optional)</li>
+        <li><a href="https://www.youtube.com/watch?v=Y3IhWbCf0Qo" target="_blank">Live Demo</a></li>
       </ul>
 
       <h3>Screenshots</h3>
-      <img src="assets/project-screenshot.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
+      <img src="../assets/projects/network_file_transfer.png" alt="Screenshot of the project" style="max-width: 100%; height: auto;">
 
       <h3>Lessons Learned</h3>
       <p>
-        A short note on what you learned or improved while building this — employers love to see growth!
+        I learned the basics of connecting two computers via a local wireless connection. I learned how TCP connections work, what the client-server architecture is, and how basic message encryption works.
       </p>
 
       <p>
-        <a href="projects.html">← Back to Projects</a>
+        <a href="../projects.html">← Back to Projects</a>
       </p>
     </section>
   </main>
@@ -59,6 +65,6 @@
   <footer>
     <p>&copy; Michael Wonson 2025 </p>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>
