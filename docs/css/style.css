@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
+  /* GENERAL */
   --font: "Inter", sans-serif;
   --bg: #121212;
   --bg_dark: #0e1131;
@@ -9,12 +10,29 @@
   --nav_dark: #0e1131e2;
   --nav_light: #2c4078e5;
   --nav_text: #789cff;
+  --nav_highlight: #4964af;
   --text: #f0f0f0;
+  --link: #0099ff;
+
+  /* HOME PAGE */
   --button: #4964af;
   --button_hover: #0357ff;
-  --link: #0099ff;
+  --card-bg: #0d0d1b;
+
+  --card-bg-alt: #1c2550;    /* alternative card bg for subtle variation */
+  --card-border: rgba(255,255,255,0.06);
+  --card-radius: 18px;
+  --card-shadow: 0 8px 24px rgba(2,6,23,0.6);
+  --card-hover-scale: 1.03;
+  --card-padding: 20px;
+
+  /* PROJECTS PAGE */
+
 }
 
+html {
+  scroll-padding-top: 70px;
+}
 
 body {
   background: linear-gradient(115deg, var(--bg_dark), var(--bg_light));
@@ -69,22 +87,9 @@ nav a.selected {
 }
 
 nav a:hover {
-  background-color: var(--button);
+  background-color: var(--nav_highlight);
   opacity: 0.95;
   color: var(--text);
-}
-
-#theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: inherit;
-  padding: 0 0.25rem;
-}
-
-#theme-toggle:hover {
-  opacity: 0.8;
 }
 
 main {
@@ -130,7 +135,7 @@ ul {
   gap: 2rem;
   padding: 2rem;
   max-width: 1200px;
-  margin: 4rem 3rem;
+  margin: 4rem 3rem 6rem 3rem;
   border: 3px solid white;
   border-radius: 40px; /* heavily curved corners */
   position: relative;
@@ -158,7 +163,7 @@ ul {
   gap: 1rem;
 }
 
-.button {
+.hero-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border: 2px solid var(--button);
@@ -168,7 +173,7 @@ ul {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-.button:hover {
+.hero-button:hover {
   background: var(--button_hover);
   color: white;
 }
@@ -185,16 +190,54 @@ ul {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-.highlights ul {
-  list-style:none;
+/* Card grid container */
+.highlights {
+  max-width: 900px;
+  margin: 2rem auto;
 }
 
-.highlights ul li:before {
-  content: '✔️';
+.highlight-card {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
 }
 
+.highlight-card:hover {
+  transform: translateY(-4px);
+}
 
+.card-icon {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color, #007BFF);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.card-icon img {
+  width: 50%;
+  height: auto;
+}
+
+.card-content h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  margin: 0.5rem 0 0;
+  color: #555;
+}
 
 
 
