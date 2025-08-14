@@ -4,6 +4,7 @@ Welcome to my personal portfolio website!
 This site showcases my programming experience, projects, and skills for potential employers and collaborators.
 
 🌐 **Live Site:** [https://wonsonmike.github.io/Portfolio/](https://wonsonmike.github.io/Portfolio/)
+
 📂 **Repository:** [https://github.com/wonsonmike/Portfolio/](https://github.com/wonsonmike/Portfolio/)
 
 ---
@@ -14,7 +15,7 @@ This portfolio is a multi-page, minimalist, and modern website built with **HTML
 It’s designed to be simple, fast, and easy to maintain, with the following features:
 
 - 📁 **Multi-page structure:** Dedicated pages for About, Projects, and individual project details.
-- 🌙 **Dark & Light Mode:** Toggle between dark and light themes, with user preference saved across pages.
+- 🌙 **Dark Mode:** Site-wide dark mode with a consistent theme.
 - 📌 **Sticky Navigation:** Navigation bar stays visible as you scroll for easy access.
 - ⚡ **Responsive Design:** Works well on desktop and mobile devices.
 - 🚀 **Deployed with GitHub Pages:** Free and reliable static site hosting.
@@ -25,7 +26,7 @@ It’s designed to be simple, fast, and easy to maintain, with the following fea
 
 - **HTML5** — clean, semantic markup
 - **CSS3** — minimalist, responsive styling
-- **JavaScript** — handles theme switching and user preferences
+- **JavaScript** — handles navigation UX
 - **Git & GitHub** — version control and free hosting with GitHub Pages
 
 ---
@@ -55,7 +56,7 @@ It’s designed to be simple, fast, and easy to maintain, with the following fea
 
 1️⃣ Clone the repo:
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/wonsonmike/portfolio.git
 ```
 
 2️⃣ Open any HTML file in your web browser.  
@@ -71,13 +72,6 @@ Push your changes to GitHub to update the live site.
 
 I’m currently open to opportunities and collaborations.  
 Feel free to reach out via the [Contact](contact.html) page!
-
----
-
-## 🏷️ License
-
-This portfolio website is open source under the [MIT License](LICENSE).  
-Feel free to adapt it for your own use — a credit is appreciated!
 
 ---
 
