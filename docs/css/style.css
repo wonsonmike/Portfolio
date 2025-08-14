@@ -109,7 +109,7 @@ nav a:hover {
 
 
 /* Mobile menu hidden by default */
-@media (max-width: 768px) {
+@media (max-width: 788px) {
   .nav-toggle {
     display: block;
   }
@@ -167,7 +167,6 @@ ul {
 
 
 /* HOME PAGE */
-/* 788px is when to switch to mobile */
 .hero {
   display: flex;
   align-items: center;
@@ -177,12 +176,11 @@ ul {
   max-width: 1200px;
   margin: 4rem 3rem 6rem 3rem;
   border: 3px solid white;
-  border-radius: 40px; /* heavily curved corners */
+  border-radius: 40px;
   position: relative;
   background: transparent;
 }
 
-/* 855px is when the buttons get wonky*/
 .hero-content {
   flex: 1;
   padding: 1rem 11rem 1rem 1rem;
@@ -223,11 +221,41 @@ ul {
   height: auto;
   border-radius: 50%;
   position: absolute;
-  right: -75px; /* overlap the outline */
+  right: -75px;
   top: 50%;
   transform: translateY(-50%);
-  border: 4px solid white; /* optional, makes image pop */
+  border: 4px solid white;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 730px) {
+.hero {
+    display: block;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 0; /* Full width text */
+  }
+
+  .hero-image {
+    position: absolute;
+    top: -3.5rem;
+    right: -3.5rem;
+    transform: none;
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 /* Card grid container */
