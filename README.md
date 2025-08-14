@@ -45,9 +45,8 @@ It’s designed to be simple, fast, and easy to maintain, with the following fea
 │   └── style.css
 ├── js/
 │   └── script.js
-├── assets/
-│   └── (images, screenshots, etc.)
-└── README.md
+└── assets/
+    └── (images, screenshots, etc.)
 ```
 
 ---
@@ -71,7 +70,7 @@ Push your changes to GitHub to update the live site.
 ## 📧 Contact
 
 I’m currently open to opportunities and collaborations.  
-Feel free to reach out via the [Contact](contact.html) page!
+Feel free to reach out via the [Contact](https://wonsonmike.github.io/Portfolio/contact.html) page!
 
 ---
 
