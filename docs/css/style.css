@@ -441,3 +441,104 @@ ul {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
+
+/* CONTACT PAGE */
+.contact-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(180deg, var(--card-bg), var(--card-bg-alt));
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--nav_text);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 2px solid var(--nav_highlight);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(240, 240, 240, 0.6);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--link);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-button {
+  padding: 0.875rem 2rem;
+  border: 2px solid var(--button);
+  background: var(--button);
+  color: white;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  align-self: center;
+}
+
+.submit-button:hover {
+  background: var(--button_hover);
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.contact-alternative {
+  text-align: center;
+  margin-top: 2rem;
+  color: rgba(240, 240, 240, 0.8);
+}
+
+@media (max-width: 730px) {
+  .contact-section {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+  
+  .contact-section h2 {
+    font-size: 1.5rem;
+  }
+}
