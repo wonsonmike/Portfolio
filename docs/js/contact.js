@@ -1,3 +1,6 @@
+// Troubleshooting
+console.log(CONFIG.EMAILJS_PUBLIC_KEY);
+
 // EmailJS Configuration - Load from config.js
 emailjs.init(CONFIG.EMAILJS_PUBLIC_KEY);
 
