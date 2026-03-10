@@ -1,0 +1,6 @@
+- name: Inject Secrets into config.js
+  run: |
+    sed -i "s|__PUBLIC_KEY__|${{ secrets.EMAILJS_PUBLIC_KEY }}|g" docs/js/config.js
+    sed -i "s|__SERVICE_ID__|${{ secrets.EMAILJS_SERVICE_ID }}|g" docs/js/config.js
+    sed -i "s|__TEMPLATE_ID__|${{ secrets.EMAILJS_TEMPLATE_ID }}|g" docs/js/config.js
+    sed -i "s|__RECIPIENT_EMAIL__|${{ secrets.EMAILJS_RECIPIENT_EMAIL }}|g" docs/js/config.js
