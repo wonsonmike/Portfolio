@@ -37,15 +37,16 @@
     
     <section class="contact-section">
       <h2>Get In Touch</h2>
-      <form class="contact-form" action="https://formsubmit.co/wonsonmwork@gmail.com" method="POST">
+      <div id="form-message" class="form-message" style="display: none;"></div>
+      <form id="contact-form" class="contact-form">
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required placeholder="Your Name">
+          <input type="text" id="name" name="from_name" required placeholder="Your Name">
         </div>
         
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+          <input type="email" id="email" name="from_email" required placeholder="your.email@example.com">
         </div>
         
         <div class="form-group">
@@ -67,6 +68,9 @@
   <footer>
     <p>&copy; Michael Wonson 2026</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="js/config.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
