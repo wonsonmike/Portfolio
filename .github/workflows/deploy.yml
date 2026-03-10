@@ -1,6 +1,39 @@
-- name: Inject Secrets into config.js
-  run: |
-    sed -i "s|__PUBLIC_KEY__|${{ secrets.EMAILJS_PUBLIC_KEY }}|g" docs/js/config.js
-    sed -i "s|__SERVICE_ID__|${{ secrets.EMAILJS_SERVICE_ID }}|g" docs/js/config.js
-    sed -i "s|__TEMPLATE_ID__|${{ secrets.EMAILJS_TEMPLATE_ID }}|g" docs/js/config.js
-    sed -i "s|__RECIPIENT_EMAIL__|${{ secrets.EMAILJS_RECIPIENT_EMAIL }}|g" docs/js/config.js
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Inject Secrets into config.js
+        run: |
+          sed -i "s|__PUBLIC_KEY__|${{ secrets.EMAILJS_PUBLIC_KEY }}|g" docs/js/config.js
+          sed -i "s|__SERVICE_ID__|${{ secrets.EMAILJS_SERVICE_ID }}|g" docs/js/config.js
+          sed -i "s|__TEMPLATE_ID__|${{ secrets.EMAILJS_TEMPLATE_ID }}|g" docs/js/config.js
+          sed -i "s|__RECIPIENT_EMAIL__|${{ secrets.EMAILJS_RECIPIENT_EMAIL }}|g" docs/js/config.js
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
