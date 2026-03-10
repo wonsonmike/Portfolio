@@ -26,7 +26,7 @@ It’s designed to be simple, fast, and easy to maintain, with the following fea
 
 - **HTML5** — clean, semantic markup
 - **CSS3** — minimalist, responsive styling
-- **JavaScript** — handles navigation UX
+- **JavaScript** — handles navigation UX and Contact Form submission
 - **Git & GitHub** — version control and free hosting with GitHub Pages
 
 ---
